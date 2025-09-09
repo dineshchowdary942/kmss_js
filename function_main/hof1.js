@@ -1,16 +1,15 @@
-const a=[10,9,4,3,2,0,20,30];
-for (let i=0;i<a.length;i++)
+function make(greet)
 {
-    for (let j=i+1;j<a.length;j++)
+    return function(name)
     {
-        console.log("a[i]",a[i])
-        console.log("a[j]",a[j])
-        if (a[i]<a[j])
-        {
-            let desc=a[i];
-            a[i]=a[j];
-            a[j]=desc;
-        }
+        return `${greet},I'm ${name}`
     }
 }
-console.log(a);  
+
+const one=make("Hello");
+const two=make("Hey");
+console.log(one());
+console.log(two());
+
+console.log(one("Alice"));
+console.log(two("Bob"));

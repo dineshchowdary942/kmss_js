@@ -15,3 +15,4 @@ console.log(multiply(10,4));
 //
 const power =a=>a**a;
 console.log(power(3))
+
