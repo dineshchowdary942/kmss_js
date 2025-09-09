@@ -34,8 +34,8 @@ for(let b of core.keys())
 {
     console.log(b);
 }
-//both key and values
-for(let [key,value] of core.entries())
+//both keys and values
+for(let [key,value] of core.entries()) //both key and value are not inbuilt they can be any let [d,e]
 {
     console.log(`${key}:${value}`);     
 }
